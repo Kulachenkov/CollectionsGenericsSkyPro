@@ -14,17 +14,9 @@ public class Main {
         exerciseOne(nums);
         exerciseTwo(nums);
 
-        List<String> strings = new ArrayList<>(List.of("дубль","дубль","один","два","три","три"));
         String string = "В этой строке строке могут встречаться дубли дубли";
         exerciseThree(string);
         exerciseFour(string);
-    }
-
-    public static void print(List<Integer> nums){
-        for (Integer num : nums) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
     }
 
     public static void exerciseOne(List<Integer> nums) {
@@ -65,6 +57,13 @@ public class Main {
         }
         int result = strings.size() - newSet.size();
         System.out.println(result);
+    }
+
+    public static void print(List<Integer> nums){
+        for (Integer num : nums) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
     }
 
     public static List<String> textToList(String text) {
